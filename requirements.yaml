@@ -1,4 +1,4 @@
-name : autogen_venv
+name : pricai_venv
 
 channels:
 - python
