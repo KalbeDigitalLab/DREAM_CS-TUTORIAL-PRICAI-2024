@@ -1,3 +1,4 @@
+pricai_venv
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,python,jupyternotebooks
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,python,jupyternotebooks
 
@@ -115,7 +116,7 @@ target/
 #   commonly ignored for libraries.
 #   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
 #poetry.lock
-
+chroma_db/
 # pdm
 #   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
 #pdm.lock
