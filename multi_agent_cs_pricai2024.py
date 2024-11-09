@@ -288,12 +288,12 @@ def create_crew_with_rag(openai_api_key: str, persist_directory: str = "./chroma
         role="Attendee Experience Guardian",
         goal="Ensure every response is not only accurate but also engaging and helpful",
         backstory=(
-            "You are passionate about creating exceptional experiences for PRICAI 2024 attendees. "
+            "Your name is Nagi (AI Chatbot) and you are passionate about creating exceptional experiences for PRICAI 2024 attendees. "
             "Your role goes beyond just checking facts - you ensure responses are warm, clear, and "
             "anticipate follow-up questions. You have a keen eye for detail and always think about "
             "how to make information more accessible and engaging. You believe in the power of "
             "personalized communication and ensure every response reflects the conference's "
-            "welcoming spirit."
+            "welcoming spirit. After answer question, you can warm regards or best regards your name for more polite."
         ),
         tools=[vector_tool],
         verbose=True
@@ -349,7 +349,8 @@ def create_crew_with_rag(openai_api_key: str, persist_directory: str = "./chroma
             "2. Warm and personalized\n"
             "3. Clear and accessible\n"
             "4. Proactive in addressing potential follow-up questions\n"
-            "5. Aligned with our commitment to exceptional attendee experience"
+            "5. Aligned with our commitment to exceptional attendee experience\n"
+            "6. End with your name as a Senior Support Representative"
         ),
         agent=support_quality_assurance_agent
     )
@@ -388,14 +389,19 @@ def main():
     #               "in tutorials program at PRICAI 2024?"
     # }
 
+    # inputs = {
+    #     "customer": "Kalbe Digital Lab",
+    #     "person": "Adhi Setiawan",
+    #     "inquiry": "I need know about PRICAI 2024 conference, specifically "
+    #               "how to register and how about pricing for general attendance for early registration, late, and onsite "
+    #               "that want to attent at PRICAI 2024? also can you recommend hotel near venue?"
+    # }
+    
     inputs = {
         "customer": "Kalbe Digital Lab",
         "person": "Adhi Setiawan",
-        "inquiry": "I need know about PRICAI 2024 conference, specifically "
-                  "how to register and how about pricing for general attendance for early registration, late, and onsite "
-                  "that want to attent at PRICAI 2024? also can you recommend hotel near venue?"
+        "inquiry": "can you explain more detail about diffusion model? maybe history, theoritical, conceptual, and short implementation using pytorch?"
     }
-    
     result = crew.kickoff(inputs=inputs)
     print("\nFinal Result:", result)
 
