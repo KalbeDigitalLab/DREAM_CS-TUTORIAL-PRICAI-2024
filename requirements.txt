@@ -1,27 +1,6 @@
-# Essential packages
-pyautogen==0.2.35
-langsmith
-langchain
+pydotenv
+ipykernel
 crewai==0.28.8
-crewai_tools==0.1.6
+# crewai_tools==0.1.6
+crewai_tools
 langchain_community==0.0.29
-chess==1.10.0
-yfinance==0.2.38
-
-# Machine Learning packages
-numpy
-pandas
-matplotlib
-python-dotenv
-
-# Additional packages from your install commands
-datasets
-chromadb
-langchain-chroma
-playwright
-beautifulsoup4
-ragas
-
-
-# pip install playwright
-# playwright install-deps
