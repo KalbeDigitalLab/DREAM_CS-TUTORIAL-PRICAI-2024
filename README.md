@@ -18,8 +18,8 @@ Ensure you have Python 3.8 or higher installed on your system.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your_username/PRICAI2024-RAG-Agent-Chatbot.git
-   cd PRICAI2024-RAG-Agent-Chatbot
+   git clone https://github.com/KalbeDigitalLab/DREAM_CS-TUTORIAL-PRICAI-2024.git
+   cd DREAM_CS-TUTORIAL-PRICAI-2024
    ```
 2. Install required dependencies:
    - Using `requirements.txt`:
