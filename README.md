@@ -35,6 +35,22 @@ Ensure you have Python 3.8 or higher installed on your system.
      conda env create -f requirements.yaml
      ```
 
+## Configuration
+
+1. **Create an OpenAI API Key**
+
+   To use OpenAI's GPT-4, you need an API key. Create your key by signing up at the [OpenAI website](https://platform.openai.com/signup).
+
+2. **Set Up the `.env` File**
+
+   Create a `.env` file in the root directory of the project and add your OpenAI API key and any other necessary configuration variables:
+
+   ```env
+   OPENAI_API_KEY=your_openai_api_key_here
+   ```
+
+   Replace `your_openai_api_key_here` with the API key you obtained from OpenAI.
+
 ## Project Structure
 
 The repository has the following structure:
