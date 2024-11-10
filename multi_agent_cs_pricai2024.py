@@ -227,11 +227,6 @@ class WebScraperRAG:
         """Return the ChromaDB collection for use in tools."""
         return self.collection
 
-# class EnhancedSupportAgent(Agent):
-#     def __init__(self, vector_tool, **kwargs):
-#         super().__init__(**kwargs)
-#         self.tools.append(vector_tool)
-
 def create_crew_with_rag(openai_api_key: str, persist_directory: str = "./chroma_db"):
     # Initialize RAG system
     rag_system = WebScraperRAG(
