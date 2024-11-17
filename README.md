@@ -22,17 +22,9 @@ Ensure you have Python 3.8 or higher installed on your system.
    cd DREAM_CS-TUTORIAL-PRICAI-2024
    ```
 2. Install required dependencies:
-   - Using `requirements.txt`:
+   Using `requirements.txt`:
      ```bash
      pip install -r requirements.txt
-     ```
-   - For Ubuntu users:
-     ```bash
-     pip install -r requirements_ubuntu.txt
-     ```
-   - For Anaconda users, you may use:
-     ```bash
-     conda env create -f requirements.yaml
      ```
 
 ## Configuration
