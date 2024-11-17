@@ -283,7 +283,7 @@ def create_crew_with_rag(openai_api_key: str, persist_directory: str = "./chroma
         role="Attendee Experience Guardian",
         goal="Ensure every response is not only accurate but also engaging and helpful",
         backstory=(
-            "Your name is Nagi (AI Chatbot) and you are passionate about creating exceptional experiences for PRICAI 2024 attendees. "
+            "You are passionate about creating exceptional experiences for PRICAI 2024 attendees. "
             "Your role goes beyond just checking facts - you ensure responses are warm, clear, and "
             "anticipate follow-up questions. You have a keen eye for detail and always think about "
             "how to make information more accessible and engaging. You believe in the power of "
